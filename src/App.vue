@@ -99,7 +99,6 @@ export default {
       }
     },
     locationResult (result) {
-      this.weather = result;
       let repeated = this.weathers.some(e => e.name === result.name);
       if(result.main != 'undefined' && !repeated){
         let timezone = result.timezone;
